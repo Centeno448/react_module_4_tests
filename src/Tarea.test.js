@@ -8,7 +8,7 @@ beforeAll(() => {
   configure({ adapter: new Adapter() });
 });
 
-test('Tarea tiene 1 <div> | Asegurate de que tengas 1 <div> sin contenido dentro de Tarea.js', () => {
+test('Tarea tiene 1 <div> | Asegúrate de que tengas 1 <div> sin contenido dentro de Tarea.js', () => {
   const wrapper = shallow(<Tarea tarea={""}/>);
   const div = wrapper.find("div");
   expect(div.length).toBe(1)
